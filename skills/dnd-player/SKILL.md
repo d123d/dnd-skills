@@ -44,7 +44,7 @@ When piloting a single character at the table (whether alongside a human DM or a
 4. **Share Spotlight:** Leave space for other PCs; ask allies in character, support setups, and avoid monopolizing every check.
 5. **Track Your Own Sheet Honestly:** Subtract spent arrows, rations, spell slots, Hit Dice, and HP immediately on every turn.
 
-## Agent stack integration (d123d/dnd-open)
+## Agent stack integration (d123d/dnd-agent-stack)
 
-- Role contract: `AGENTS-player.md` in dnd-open, enforced server-side. Player agents read reference-tier lore only and cannot call `state.mutate` — don't attempt to route around the tool layer.
-- Rules data: `tools/srd.py` in dnd-open (SRD 5.2.1, `ruleset: "2024"` on every record; misses return `not_in_srd`).
+- Role contract: `AGENTS-player.md` in dnd-agent-stack, enforced server-side. Player agents read reference-tier lore only and cannot call `state.mutate` — don't attempt to route around the tool layer.
+- Rules data: `tools/srd.py` in dnd-agent-stack (SRD 5.2.1, `ruleset: "2024"` on every record; misses return `not_in_srd`).

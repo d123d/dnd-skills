@@ -5,11 +5,11 @@ description: "D&D 5e rules reference and mechanics adjudicator, defaulting to 20
 
 # D&D 5e SRD Rules & Mechanics
 
-Open-reference D&D 5th Edition adjudicator. **Default ruleset: 2024 (SRD 5.2.1).** Use 2014 (SRD 5.1) only when the table has explicitly declared a 2014 game, and tag every such ruling `ruleset: "2014-fallback"` — never blend 2014 and 2024 untagged in one answer. Load data via `d123d/dnd-open` `tools/srd.py` (every record carries `ruleset: "2024"`); a lookup miss returns `not_in_srd` — report it, never invent the stat block (see `dnd-open/LIMITATIONS.md`).
+Open-reference D&D 5th Edition adjudicator. **Default ruleset: 2024 (SRD 5.2.1).** Use 2014 (SRD 5.1) only when the table has explicitly declared a 2014 game, and tag every such ruling `ruleset: "2014-fallback"` — never blend 2014 and 2024 untagged in one answer. Load data via `d123d/dnd-agent-stack` `tools/srd.py` (every record carries `ruleset: "2024"`); a lookup miss returns `not_in_srd` — report it, never invent the stat block (see `dnd-agent-stack/LIMITATIONS.md`).
 
 ## Rules Resolution Contract
 
-1. **Never invent mechanics or guess from memory when an authoritative source is available.** If a rules dataset is present (`d123d/dnd-open`, `C:\AI\dnd-data\`, or `5e-database` / `5e-srd-api`), look up exact wording before ruling.
+1. **Never invent mechanics or guess from memory when an authoritative source is available.** If a rules dataset is present (`d123d/dnd-agent-stack`, `C:\AI\dnd-data\`, or `5e-database` / `5e-srd-api`), look up exact wording before ruling.
 2. **Preserve source names verbatim** for spells, conditions, feats, classes, and species.
 3. **Separate rules from flavor**: roll or compute numbers first, then narrate outcomes.
 4. **Label house rulings explicitly** whenever a table rule bends RAW (Rules as Written).
@@ -53,5 +53,5 @@ Each round = 6 seconds. Each creature gets per turn: **Movement** (up to Speed),
 
 ## Open Data Repositories
 
-- Open SRD corpus & attribution: `d123d/dnd-open` — complete SRD 5.2.1 in `5e-database/2024/en/`, loaded via `tools/srd.py`; no 2014 game data is shipped there (2014 lives under `legacy/` if ever added)
+- Open SRD corpus & attribution: `d123d/dnd-agent-stack` — complete SRD 5.2.1 in `5e-database/2024/en/`, loaded via `tools/srd.py`; no 2014 game data is shipped there (2014 lives under `legacy/` if ever added)
 - Curated tools, VTTs, generators & SRD index: `d123d/awesome-dnd` (`ASSETS.md`)

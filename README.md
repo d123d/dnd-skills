@@ -28,5 +28,5 @@ npx -y skills add d123d/dnd-skills -g -s dnd-player -a claude-code codex -y
 
 ## Related Repositories
 
-- `d123d/dnd-open` — Open D&D 5e SRD data and tools
+- `d123d/dnd-agent-stack` — Open D&D 5e SRD data and tools
 - `d123d/awesome-dnd` — Curated directory of open-source D&D tools, data, VTTs, and AI skills
