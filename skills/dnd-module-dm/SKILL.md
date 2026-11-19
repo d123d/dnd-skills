@@ -54,3 +54,10 @@ Re-read the active ledger before resolving any claim about inventory, HP, slots,
 - Update `state.md` ledger, loot, XP, spent slots/consumables, and NPC dispositions.
 - Advance background faction/villain clocks only for elapsed world time.
 - Log open threads and next-session immediate hook.
+
+## Agent stack integration (d123d/dnd-open)
+
+- Campaign state is authoritative in dmctl (`tools/dmctl.py`): every world change is a validated event (mutate → validate → commit); never track state only in prose or memory.
+- Recaps come from `dmctl recap` (the event log), not from session memory.
+- Role contract: `AGENTS-dm.md` in dnd-open. Secrets are revealed only after a committed `secret_revealed` event.
+- Cinema: you are also the director. The event log is the shooting script for the Blender staging; approve previs before renders go to MiniMax. Full pipeline: `d123d/dnd-open` MISSION.md / ROADMAP.md.

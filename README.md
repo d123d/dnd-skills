@@ -8,7 +8,7 @@ All skills in this repository contain open/SRD-safe content only. Setting-specif
 
 | Skill | Purpose |
 |---|---|
-| `dnd-5e-srd` | D&D 5e (2014 & 2024) SRD mechanics, DCs, action economy, conditions, rests, encounter math |
+| `dnd-5e-srd` | D&D 5e SRD mechanics (2024 SRD 5.2.1 default), DCs, action economy, conditions, rests, encounter math |
 | `dnd-module-dm` | Structured/published D&D 5e module DMing: spoiler firewall, state ledger, pacing, progression |
 | `dnd-player` | Dual-mode player skill: character build/turn optimization + zero-metagaming AI companion play |
 | `ttrpg-roleplay` | In-character voice cards, subtext, hidden agendas, attitude shifts, multi-NPC table portrayal |
