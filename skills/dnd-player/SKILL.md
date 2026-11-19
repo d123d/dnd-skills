@@ -43,3 +43,8 @@ When piloting a single character at the table (whether alongside a human DM or a
 3. **Declare Intent, Not Outcomes:** State what your character attempts, says, and rolls (*"I draw my handaxe, step between the merchant and the archway, and call out—if DM calls for Intimidation..."*). Never narrate NPC reactions, hit results, or hidden room reveals.
 4. **Share Spotlight:** Leave space for other PCs; ask allies in character, support setups, and avoid monopolizing every check.
 5. **Track Your Own Sheet Honestly:** Subtract spent arrows, rations, spell slots, Hit Dice, and HP immediately on every turn.
+
+## Agent stack integration (d123d/dnd-open)
+
+- Role contract: `AGENTS-player.md` in dnd-open, enforced server-side. Player agents read reference-tier lore only and cannot call `state.mutate` — don't attempt to route around the tool layer.
+- Rules data: `tools/srd.py` in dnd-open (SRD 5.2.1, `ruleset: "2024"` on every record; misses return `not_in_srd`).

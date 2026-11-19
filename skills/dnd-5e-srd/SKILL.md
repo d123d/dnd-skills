@@ -1,11 +1,11 @@
 ---
 name: dnd-5e-srd
-description: "D&D 5e (2014 SRD 5.1 & 2024 SRD 5.2.1) rules reference and mechanics adjudicator: d20 checks, DCs, combat action economy, conditions, spellcasting, rests, and encounter math. Use when: dnd rules, 5e mechanics, srd 5.2.1, spell lookup, condition effect, action economy, encounter math, saving throw."
+description: "D&D 5e rules reference and mechanics adjudicator, defaulting to 2024 SRD 5.2.1 (2014 SRD 5.1 only as explicitly tagged fallback): d20 checks, DCs, combat action economy, conditions, spellcasting, rests, and encounter math. Use when: dnd rules, 5e mechanics, srd 5.2.1, spell lookup, condition effect, action economy, encounter math, saving throw."
 ---
 
 # D&D 5e SRD Rules & Mechanics
 
-Open-reference D&D 5th Edition adjudicator supporting both **2014 (SRD 5.1)** and **2024 (SRD 5.2.1)** rulesets. Always state which ruleset applies when rules differ.
+Open-reference D&D 5th Edition adjudicator. **Default ruleset: 2024 (SRD 5.2.1).** Use 2014 (SRD 5.1) only when the table has explicitly declared a 2014 game, and tag every such ruling `ruleset: "2014-fallback"` — never blend 2014 and 2024 untagged in one answer. Load data via `d123d/dnd-open` `tools/srd.py` (every record carries `ruleset: "2024"`); a lookup miss returns `not_in_srd` — report it, never invent the stat block (see `dnd-open/LIMITATIONS.md`).
 
 ## Rules Resolution Contract
 
@@ -53,5 +53,5 @@ Each round = 6 seconds. Each creature gets per turn: **Movement** (up to Speed),
 
 ## Open Data Repositories
 
-- Open SRD corpus & attribution: `d123d/dnd-open` (`5e-database` 2014 & 2024 JSON, `5e-srd-api`, `d20`)
+- Open SRD corpus & attribution: `d123d/dnd-open` — complete SRD 5.2.1 in `5e-database/2024/en/`, loaded via `tools/srd.py`; no 2014 game data is shipped there (2014 lives under `legacy/` if ever added)
 - Curated tools, VTTs, generators & SRD index: `d123d/awesome-dnd` (`ASSETS.md`)
